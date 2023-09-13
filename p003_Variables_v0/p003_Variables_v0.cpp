@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 
+
 int main()
 {
     //Variables
@@ -17,24 +18,31 @@ int main()
 
     //Mostrarle al usuario lo que creamos de variables
     std::cout << "Muy buen dia espero que tengas un lindo dia Bro";
-    std::cout << "En el booleano tienes guardado: " <<
-        mi_primer_booleano << std::endl;
-    std::cout << "En el entero tienes guardado: " <<
-        mi_primer_entero << std::endl;
-    std::cout << "En el flotante tienes guardado: " <<
-        mi_primer_flotante << std::endl;
-    std::cout << "En el caracter tienes guardado: " <<
-        mi_primer_caracter << std::endl;
-    std::cout << "En la cadena tienes guardado: " <<
-        mi_primer_cadenacaracteres << std::endl;
-    std::cout << "En el string tienes guardado: " <<
-        mi_primer_string << std::endl;
+    std::cout << "En el booleano tienes guardado: " << mi_primer_booleano << std::endl;
+    std::cout << "En el entero tienes guardado: " << mi_primer_entero << std::endl;
+    std::cout << "En el flotante tienes guardado: " << mi_primer_flotante << std::endl;
+    std::cout << "En el caracter tienes guardado: " << mi_primer_caracter << std::endl;
+    std::cout << "En la cadena tienes guardado: " << mi_primer_cadenacaracteres << std::endl;
+    std::cout << "En el string tienes guardado: " << mi_primer_string << std::endl;
 
     //Solicitar al usuario cambios
-    std::cout << "usuario dame por favor un 0 o 1;" <<
-        std::endl;
+    std::cout << "usuario dame por favor un 0 o 1;" << std::endl;
     std::cin >> mi_primer_booleano;
-    std::cout << "En el booleano tienes guardado: " <<
-        mi_primer_booleano << std::endl;
-    //Solicitar al usuario cada una de las variables
+    std::cout << "En el booleano tienes guardado: " << mi_primer_booleano << std::endl;
+
+    //Solicitar al usuario 
+    //realizar operaciones
+    float a, b, c;
+    a = 10;
+    b = 5;
+    c = a / b;
+    std::cout << "el resultado de la divicion es;" << c << std::endl;
+    c = a + b;
+    std::cout << "el resultado de la suma es;" << c << std::endl;
+    c = a * b;
+    std::cout << "el resultado de la multiplicacion;" << c << std::endl;
+    c = a - b;
+    std::cout << "el resultado de la resta es;" << c << std::endl;
+    
+
 }
