@@ -1,2 +1,6 @@
 ﻿  p003_Variables_v0.cpp
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(47,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(50,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(53,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(56,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   p003_Variables_v0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\x64\Debug\p003_Variables_v0.exe

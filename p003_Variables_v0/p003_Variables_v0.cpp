@@ -36,13 +36,26 @@ int main()
     a = 10;
     b = 5;
     c = a / b;
-    std::cout << "el resultado de la divicion es;" << c << std::endl;
+    std::cout << "el resultado de la divicion es: " << c << std::endl;
     c = a + b;
-    std::cout << "el resultado de la suma es;" << c << std::endl;
+    std::cout << "el resultado de la suma es:" << c << std::endl;
     c = a * b;
-    std::cout << "el resultado de la multiplicacion;" << c << std::endl;
+    std::cout << "el resultado de la multiplicacion:" << c << std::endl;
     c = a - b;
-    std::cout << "el resultado de la resta es;" << c << std::endl;
+    std::cout << "el resultado de la resta es :" << c << std::endl;
+    a= 10;
+    c= sqrt(10);
+    std::cout << "el resultado de la raiz cuadrada de 10 es " << c << std::endl;
+    b = 5;
+    c = sqrt(5);
+    std::cout << "el resultado de la raiz cuadrada de 5 es " << c << std::endl;
+    a = 10;
+    c = pow(10, 2);
+    std::cout << "el rezultado de la potencia de 10 es :" << c << std::endl;
+    a = 10;
+    c = pow(5, 2);
+    std::cout << "el rezultado de la potencia de 5 es :" << c << std::endl;
+
     
 
 }
