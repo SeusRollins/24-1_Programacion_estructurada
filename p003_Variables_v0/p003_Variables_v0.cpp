@@ -29,6 +29,9 @@ int main()
     std::cout << "usuario dame por favor un 0 o 1;" << std::endl;
     std::cin >> mi_primer_booleano;
     std::cout << "En el booleano tienes guardado: " << mi_primer_booleano << std::endl;
+    std::cout << "usuario dame por favor un caracter" << std::endl;
+    std::cin >> mi_primer_caracter;
+    std::cout << "El caracter que tienes guardado es " << mi_primer_caracter << std::endl;
 
     //Solicitar al usuario 
     //realizar operaciones
