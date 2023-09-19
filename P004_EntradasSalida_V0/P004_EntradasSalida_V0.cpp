@@ -12,7 +12,7 @@ int main()
     setlocale(LC_ALL, "es_Mx.UTF-8");
     bool sintoma1, sintoma2, sintoma3;
     std::string Nombre;
-    std::string Relato[100];
+    std::string Relato;
     char sexo;
     int edad;
     int peso;
@@ -30,6 +30,8 @@ int main()
     std::cin >> sintoma3;
     std::cout << "Cual es tu Nombre" << std::endl << std::endl;
     std::cin>> Nombre;
+    std::cout << "cuentame desde cuando te sientes asi " << std::endl;
+    std::cin >> Relato;
     std::cout << "Cual es tu edad " << std::endl;
     std::cin >> edad;
     std::cout << "cual es tu peso " << std::endl;
