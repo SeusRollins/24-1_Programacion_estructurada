@@ -3,4 +3,17 @@ C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Var
 C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(53,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(56,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(59,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  p003_Variables_v0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\x64\Debug\p003_Variables_v0.exe
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,18): error C3688: invalid literal suffix 'el'; literal operator or literal operator template 'operator ""el' not found
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,23): error C2146: syntax error: missing ';' before identifier 'resutdo'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,23): error C2065: 'resutdo': undeclared identifier
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,31): error C2146: syntax error: missing ';' before identifier 'de'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,31): error C2065: 'de': undeclared identifier
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,34): error C2146: syntax error: missing ';' before identifier 'la'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,34): error C2065: 'la': undeclared identifier
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,37): error C2146: syntax error: missing ';' before identifier 'divicion'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,49): error C2001: newline in constant
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,37): error C2065: 'divicion': undeclared identifier
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,46): error C2146: syntax error: missing ';' before identifier 'es'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,46): error C2065: 'es': undeclared identifier
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(65,49): error C2143: syntax error: missing ';' before 'string'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\p003_Variables_v0\p003_Variables_v0.cpp(68,1): error C2143: syntax error: missing ';' before '}'

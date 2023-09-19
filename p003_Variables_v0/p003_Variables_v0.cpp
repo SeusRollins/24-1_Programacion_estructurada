@@ -58,7 +58,11 @@ int main()
     a = 10;
     c = pow(5, 2);
     std::cout << "el rezultado de la potencia de 5 es :" << c << std::endl;
-
+    float d, e, f;
+    d = 15;
+    e = a;
+    f = d * e;
+    std::cout << "el resutdo de la Multiplicacion es " << f << std::endl;
     
 
 }
