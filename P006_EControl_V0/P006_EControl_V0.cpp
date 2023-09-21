@@ -10,7 +10,7 @@
 
 int main()
 {
-    std setlocale(LC_ALL, "es_MX.UTF-8");
+    std::setlocale(LC_ALL, "es_MX.UTF-8");
     int mayor_edad = 7;
     //Sintaxys de IF-ELSE
     if (mayor_edad >= 18)

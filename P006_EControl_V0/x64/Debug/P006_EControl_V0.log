@@ -1,3 +1,2 @@
 ﻿  P006_EControl_V0.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P006_EControl_V0\P006_EControl_V0.cpp(13,18): error C2882: 'std': illegal use of namespace identifier in expression
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P006_EControl_V0\P006_EControl_V0.cpp(13,9): error C2146: syntax error: missing ';' before identifier 'setlocale'
+  P006_EControl_V0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P006_EControl_V0\x64\Debug\P006_EControl_V0.exe
