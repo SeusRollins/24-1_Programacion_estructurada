@@ -2,11 +2,17 @@
 //GilPulido
 
 #include <iostream>
+#include<locale.h>
+
 
 int main()
 {
+    setlocale(LC_ALL, "es_Mx.UTF-8");
     int opc;
+    
     int rropc;
+    int elimination;
+    int torneoe;
     // Elimination Chamber (eliminacion) 
     // torneo (gurpos, semifinal y final)
     std::cout << "Hola bienvenido a la arena Mexico \n";
@@ -15,7 +21,7 @@ int main()
     switch (opc)
     {
     case 1:
-        std::cout << "Bienvenido al royal rumble\n";
+        std::cout << "Bienvenido al modo royal rumble\n";
         std::cout << "de cuantos luchadores sera tu royal rumble\n";
         std::cout << "1.- 10 Luchadores , 2.- 20 Luchadores , 3.-30Luchadores\n";
         std::cin >> rropc;
@@ -33,11 +39,16 @@ int main()
         default:
             break;
         }
-    default:
-        break;
+    
     case 2:
-        std::cout << "Bienvenido a Elimination Chamber\n";
+        std::cout << "Bienvenido a modo Elimination Chamber\n";
+        std::cout << "Elije el numero de entrada de tu luchador\n";
+
+
+    case 3:
+        std::cout << "Bienvenido a modo torneo\n";
         std::cout << "de cuantos luchadores sera tu royal rumble\n";
+     
     }
 
 
