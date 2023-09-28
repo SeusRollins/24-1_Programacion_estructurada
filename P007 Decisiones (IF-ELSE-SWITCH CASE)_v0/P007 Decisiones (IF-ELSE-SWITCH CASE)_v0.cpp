@@ -5,12 +5,10 @@
 
 int main()
 {
-    int royalrumble;
-    int eliminatoria;
-    int 
+    
 
     std::cout << "Hola bienvenido a la arena Mexico \n";
-    std::cout << "cual es el nombre de tu luchador \n";
+    std::cout << "que te gustaria jugar?/n ";
 
 
     std::cout << "donde finalmente tendremos un gandor de royal runle\n";
