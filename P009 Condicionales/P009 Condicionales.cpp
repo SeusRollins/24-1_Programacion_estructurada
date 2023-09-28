@@ -5,43 +5,107 @@
 #include <math.h>
 #include <string>
 #include <locale>
+#include <cmath>
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
-    int opc = 0;
-    std::cout << "Que opción deseas realizar? \n1.- Suma\n2.- Resta\n" <<
-        "3.- Multiplicación \n 4.- Division\n 5.- Valor absoluto\n 6.- mayor o menor que\n";
-        std::cin >> opc;
-        float num1=0;
-        float num2=0;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "suma\n";
-        std::cout << "cuales el primer numero de tu suma\n";
-        std::cin >> num1;
-        std::cout << "cual es tu segundo numero de tu suma "
-        std::cin >> num2;
-        std::cout << "El resultado de tu suma es: " << a + b;
-        break;
-    case 2:
-        std::cout << "resta\n";
-        std::cout << "cual es tu primer numero de tu resta\n";
-        std::cin >> num1;
-        std::cout << "cual es tu segundo numero de tu resta\n";
-        std::cin >> num2;
-        std::cout << "el resultado de tu resta es: " << a - b;
-        break;
-    case 3:
-        std::cout << "multiplicacion\n";
-        std::cout << "cual es el primer numero de tu multiplicaion\n";
-        std::cin >> num1;
-        std::cout << "cual es tu segundo numero de tu multiplicacion\n";
-        std::cin >> num2;
-        std::cout << "el resultado de la multiplicación es: " << a * b;
-        break;
-    default:
-        std::cout << "Esa opción no la conozco\n";
-    }
-}
+        int num1, num2;
+        int operador;
+        float valor;
+        
+        std::cout << "Elija que operaciom quiere hacer\n 1.- Suma, 2.-Resta, 3.Multplicacion ,4- division ,5- potencia,\n" <<
+           ", 6.-Mayor o menor que, 7.-Valor absoluto \n";
+        std::cin >> operador;
 
+        
+
+        int resultado;
+        switch (operador)
+        {
+
+        case 1:
+            std::cout << "Ingrese el primer numero por favot\n";
+            std::cin >> num1;
+
+            std::cout << "Ingrese el segundo numero\n";
+            std::cin >> num2;
+
+            resultado = num1 + num2;
+
+            std::cout << "El resultado de la suma es " << resultado << std::endl;
+            break;
+        case 2:
+            std::cout << "Ingrese el primer numero por favot\n";
+            std::cin >> num1;
+
+            std::cout << "Ingrese el segundo numero\n";
+            std::cin >> num2;
+
+            resultado = num1 - num2;
+            std::cout << "El resultado de la resta es " << resultado << std::endl;
+            break;
+        case 3:
+            std::cout << "Ingrese el primer numero por favot\n";
+            std::cin >> num1;
+
+            std::cout << "Ingrese el segundo numero\n";
+            std::cin >> num2;
+            resultado = num1 * num2;
+            std::cout << "El resultado de la multiplacion es " << resultado << std::endl;
+            break;
+        case 4:
+            std::cout << "Ingrese el primer numero por favot\n";
+            std::cin >> num1;
+
+            std::cout << "Ingrese el segundo numero\n";
+            std::cin >> num2;
+            resultado = num1 / num2;
+            std::cout << "El resultado de la division es " << resultado << std::endl;
+            break;
+        case 5:
+            std::cout << "Ingrese el primer numero por favot\n";
+            std::cin >> num1;
+
+            std::cout << "Ingrese el segundo numero\n";
+            std::cin >> num2;
+            resultado = num1 ^ num2;
+            std::cout << "El resultado de la potencia es " << resultado << std::endl;
+            break;
+        case 6:
+            std::cout << "dame tu primer numero por favor\n";
+            std::cin >> num1;
+            std::cout << "dame tu segundo numero por favor\n ";
+            std::cin >> num2;
+
+            if (num1 == num2)
+            {
+                std::cout << "son iguales no hay diferencia\n";
+            }
+            else
+            {
+                if (num1 > num2)
+                {
+                    std::cout << num1 << " es mayor a " << num2 << std::endl;
+                }
+                else
+                {
+                    if (num1 < num2)
+                    {
+                        std::cout << num1 << " es menor a " << num2 << std::endl;
+                    }
+                }
+            }
+            break;
+        case 7:
+            std::cout << "Escribe un numero flotante: ";
+            std::cin >> valor;
+            float valorAbsoluto = abs(valor);
+            std::cout << "El valor absoluto es " << valorAbsoluto;
+            break;
+        }
+            
+            
+        
+       
+
+    }

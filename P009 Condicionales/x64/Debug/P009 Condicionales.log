@@ -1,8 +1,2 @@
 ﻿  P009 Condicionales.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(24,14): error C2143: syntax error: missing ';' before 'std::cin'
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(25,56): error C2065: 'a': undeclared identifier
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(25,60): error C2065: 'b': undeclared identifier
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(33,57): error C2065: 'a': undeclared identifier
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(33,61): error C2065: 'b': undeclared identifier
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(41,67): error C2065: 'a': undeclared identifier
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\P009 Condicionales.cpp(41,71): error C2065: 'b': undeclared identifier
+  P009 Condicionales.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P009 Condicionales\x64\Debug\P009 Condicionales.exe

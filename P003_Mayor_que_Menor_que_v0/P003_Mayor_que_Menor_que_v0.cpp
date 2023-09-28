@@ -16,18 +16,24 @@ int main()
     std::cout << "dame tu segundo numero por favor " << std::endl;
     std::cin >> num2;
     int mayor_edad = 7;
-    if (num1 > num2)
+    if (num1 == num2)
     {
-        std::cout << num1 << " es mayor a " << num2 << std::endl;
+        std::cout << "son iguales no hay diferencia\n";
     }
-    else 
+    else
     {
-        if (num1 < num2)
+        if (num1 > num2)
         {
-            std::cout << num1 << " es menor a " << num2 << std::endl;
+            std::cout << num1 << " es mayor a " << num2 << std::endl;
+        }
+        else
+        {
+            if (num1 < num2)
+            {
+                std::cout << num1 << " es menor a " << num2 << std::endl;
+            }
         }
     }
-    
     
 }
 
