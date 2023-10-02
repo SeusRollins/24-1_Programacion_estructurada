@@ -1,5 +1,5 @@
 // P010 _Condicionales_v0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//GilPulido
 
 #include <iostream>
 #include <string>
