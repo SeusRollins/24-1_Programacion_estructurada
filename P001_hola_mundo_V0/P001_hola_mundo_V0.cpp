@@ -9,7 +9,8 @@
 int main()
 {
     //sintaxys para hablar 
-    std::cout << "good game\n";
+    std::cout << "hola mundo\n";
+    std::cout << "God game\n";
     std::count << std::end;
 }
 
