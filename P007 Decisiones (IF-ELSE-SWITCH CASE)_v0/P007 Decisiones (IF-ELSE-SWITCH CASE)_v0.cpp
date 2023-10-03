@@ -15,6 +15,10 @@ int main()
     int elimination;
     int torneoe;
     int num;
+    bool repetir = true;
+   
+    while (repetir)
+    { 
     // Elimination Chamber (eliminacion) 
     // torneo (gurpos, semifinal y final)
     std::cout << "Hola bienvenido a la arena Mexico \n";
@@ -50,6 +54,7 @@ int main()
             }
 
             break;
+            return 0;
         case 2:
             std::cout << "veo que has elegido la opcion de 20 luchadores\n";
             std::cout << "elije un numero del 1 al 20\n";
@@ -67,6 +72,7 @@ int main()
 
             }
             break;
+            return 0;
         case 3:
             std::cout << "veo que has elegido la opcion de 30 luchadores\n";
             std::cout << "elije un numero del 1 al 30\n";
@@ -86,7 +92,7 @@ int main()
         default:
             break;
         }
-    
+        return 0;
     case 2:
         std::cout << "Bienvenido a modo Elimination Chamber\n";
         std::cout << "Elije el numero de entrada de tu luchador\n";
@@ -106,7 +112,7 @@ int main()
             std::cout << "lo siento has perdido la Elimination Chamber\n";
 
         }
-
+        return 0;
 
     case 3:
         std::cout << "Bienvenido a modo torneo\n";
@@ -126,13 +132,14 @@ int main()
             std::cout << "lo siento has perdido el torneo\n";
 
         }
-        
-     
     }
+    bool seguir = true;
+    std::cout << "Deseas repetir el algoritmo? 0.- NO 1.- SI: ";
+    std::cin >> seguir;
+    system("cls");
 
-
-    
-   
+    }
+    return 0;
 
 }
 

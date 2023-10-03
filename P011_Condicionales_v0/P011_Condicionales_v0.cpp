@@ -2,159 +2,100 @@
 //GilPulido
 
 #include <iostream>
-#include <locale>
 #include <string>
+#include <locale>
 
-int main()
-{
-    int opc =0;
+int main() {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
-    std::cout << "Adivina quien? \n a que compañia de lucha libre pertene\n el luchador\n";
+    std::cout << "Piensa en un deporte (fútbol, baloncesto, tenis, béisbol, natación, atletismo, rugby, voleibol)." << std::endl;
+    std::cout << "Por favor, responde 's' o 'n' a las preguntas." << std::endl;
+    std::string respuesta;
+    bool repetir = true;
 
-    std::cout << "Seth Rollins pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
+    while (repetir)
     {
-    case 1:
-        std::cout << "respuesta correcta el pertenece a wwe\n";
-        break;
-    case 2:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    default:
-        break;
-    }
 
-    std::cout << "kenny Omega pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    case 2:
-        std::cout << "respuesta correcta el pertenece a aew\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    default:
-        break;
-    }
 
-    std::cout << "Cody Rhodes a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta correcta el pertenece a wwe\n";
-        break;
-    case 2:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    default:
-        break;
-    }
+        // Pregunta 1
+        std::cout << "¿Se juega con una pelota? (s/n): ";
+        std::cin >> respuesta;
 
-    std::cout << "Chris Jericho pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    case 2:
-        std::cout << "respuesta correcta el pertenece a aew\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a aew\n";
-        break;
-    default:
-        break;
-    }
-    std::cout << "Psycho Clown pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta incorrecta el pertenece a aaa\n";
-        break;
-    case 2:
-        std::cout << "respuesta incorrecta el pertenece a aaa\n";
-        break;
-    case 3:
-        std::cout << "respuesta correcta el pertenece a aaa\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a aaa\n";
-        break;
-    default:
-        break;
-    }
+        if (respuesta == "s") {
+            // Pregunta 2
+            std::cout << "¿Se juega en equipo? (s/n): ";
+            std::cin >> respuesta;
 
-    std::cout << "Will Ospreay pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta incorrecta el pertenece a njp\n";
-        break;
-    case 2:
-        std::cout << "respuesta incorrecta el pertenece a njp\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a njp\n";
-        break;
-    case 4:
-        std::cout << "respuesta correcta el pertenece a njp\n";
-        break;
-    default:
-        break;
-    }
+            if (respuesta == "s") {
+                // Pregunta 3
+                std::cout << "¿Se juega en un campo grande? (s/n): ";
+                std::cin >> respuesta;
 
-    std::cout << "Roma Reings pertence a :\n";
-    std::cout << "1.- wwe, 2.-aew, 3.-aaa, 4.-njp\n";
-    std::cin >> opc;
-    switch (opc)
-    {
-    case 1:
-        std::cout << "respuesta correcta el pertenece a wwe\n";
-        break;
-    case 2:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 3:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    case 4:
-        std::cout << "respuesta incorrecta el pertenece a wwe\n";
-        break;
-    default:
-        break;
+                if (respuesta == "s") {
+                    // Pregunta 4
+                    std::cout << "¿Se juega con las manos y los pies? (s/n): ";
+                    std::cin >> respuesta;
+
+                    if (respuesta == "s") {
+                        // Pregunta 5
+                        std::cout << "¿Es un deporte acuático? (s/n): ";
+                        std::cin >> respuesta;
+
+                        if (respuesta == "s") {
+                            std::cout << "Estoy pensando en la natación." << std::endl;
+                        }
+                        else {
+                            std::cout << "Estoy pensando en el baloncesto." << std::endl;
+                        }
+                    }
+                    else {
+                        std::cout << "Estoy pensando en el fútbol." << std::endl;
+                    }
+                }
+                else {
+                    // Pregunta 6
+                    std::cout << "¿Se juega en una cancha con red? (s/n): ";
+                    std::cin >> respuesta;
+
+                    if (respuesta == "s") {
+                        std::cout << "Estoy pensando en el voleibol." << std::endl;
+                    }
+                    else {
+                        std::cout << "Estoy pensando en el tenis." << std::endl;
+                    }
+                }
+            }
+            else {
+                // Pregunta 7
+                std::cout << "¿Se juega con un bate? (s/n): ";
+                std::cin >> respuesta;
+
+                if (respuesta == "s") {
+                    std::cout << "Estoy pensando en el béisbol." << std::endl;
+                }
+                else {
+                    std::cout << "Estoy pensando en el atletismo." << std::endl;
+                }
+            }
+        }
+        else {
+            // Pregunta 8
+            std::cout << "¿Se juega con un balón ovalado? (s/n): ";
+            std::cin >> respuesta;
+
+            if (respuesta == "s") {
+                std::cout << "Estoy pensando en el rugby." << std::endl;
+            }
+            else {
+                std::cout << "No puedo adivinar el deporte en el que estás pensando." << std::endl;
+            }
+        }
+
+        bool seguir = true;
+        std::cout << "Deseas repetir el algoritmo? 0.- NO 1.- SI: ";
+        std::cin >> seguir;
+        system("cls");
+
     }
+    return 0;
+
 }
-
