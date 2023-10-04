@@ -6,6 +6,7 @@
 #include <string>
 #include <locale>
 #include <cmath>
+#include <stdexcept>
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
@@ -13,7 +14,7 @@ int main()
         int operador;
         float valor;
         bool repetir = true;
-        
+       
 
         while (repetir)
         {
@@ -21,14 +22,32 @@ int main()
            ", 6.-Mayor o menor que, 7.-Valor absoluto \n";
         std::cin >> operador;
 
-        
-        
+        if (std::cin.fail())
+        {
+            std::cerr << "Error operacion no valida\n .\n";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            continue;
+
+        }
+        int resultado;
+        try
+        {
+
+
             int resultado;
             switch (operador)
             {
+            case 0:
+                repetir = false;
+                break;
+            default:
+                std::cerr << "Operador no válido. Por favor, seleccione una opción válida.\n";
+                break;
+
 
             case 1:
-                std::cout << "Ingrese el primer numero por favot\n";
+                std::cout << "Ingrese el primer numero por favor\n";
                 std::cin >> num1;
 
                 std::cout << "Ingrese el segundo numero\n";
@@ -39,7 +58,7 @@ int main()
                 std::cout << "El resultado de la suma es " << resultado << std::endl;
                 break;
             case 2:
-                std::cout << "Ingrese el primer numero por favot\n";
+                std::cout << "Ingrese el primer numero por favor\n";
                 std::cin >> num1;
 
                 std::cout << "Ingrese el segundo numero\n";
@@ -49,7 +68,7 @@ int main()
                 std::cout << "El resultado de la resta es " << resultado << std::endl;
                 break;
             case 3:
-                std::cout << "Ingrese el primer numero por favot\n";
+                std::cout << "Ingrese el primer numero por favor\n";
                 std::cin >> num1;
 
                 std::cout << "Ingrese el segundo numero\n";
@@ -58,7 +77,7 @@ int main()
                 std::cout << "El resultado de la multiplacion es " << resultado << std::endl;
                 break;
             case 4:
-                std::cout << "Ingrese el primer numero por favot\n";
+                std::cout << "Ingrese el primer numero por favor\n";
                 std::cin >> num1;
 
                 std::cout << "Ingrese el segundo numero\n";
@@ -67,7 +86,7 @@ int main()
                 std::cout << "El resultado de la division es " << resultado << std::endl;
                 break;
             case 5:
-                std::cout << "Ingrese el primer numero por favot\n";
+                std::cout << "Ingrese el primer numero por favor\n";
                 std::cin >> num1;
 
                 std::cout << "Ingrese el segundo numero\n";
@@ -112,7 +131,14 @@ int main()
             std::cin >> seguir;
             system("cls");
         }
-        return 0;
+        catch (const std::exception& e)
+        {
+            std::cerr << "Error: " << e.what() << std::endl;
+        }
+    }
+
+    return 0;
+        
        
 
     }

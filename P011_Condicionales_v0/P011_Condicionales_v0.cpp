@@ -7,7 +7,7 @@
 
 int main() {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
-    std::cout << "Piensa en un deporte (fútbol, baloncesto, tenis, béisbol, natación, atletismo, rugby, voleibol)." << std::endl;
+    std::cout << "Piensa en un deporte (fútbol, baloncesto, tenis, béisbol, natación, Lucha libre, futbol americano, voleibol)." << std::endl;
     std::cout << "Por favor, responde 's' o 'n' a las preguntas." << std::endl;
     std::string respuesta;
     bool repetir = true;
@@ -73,7 +73,7 @@ int main() {
                     std::cout << "Estoy pensando en el béisbol." << std::endl;
                 }
                 else {
-                    std::cout << "Estoy pensando en el atletismo." << std::endl;
+                    std::cout << "Estoy pensando en el Lucha libre." << std::endl;
                 }
             }
         }
@@ -83,7 +83,7 @@ int main() {
             std::cin >> respuesta;
 
             if (respuesta == "s") {
-                std::cout << "Estoy pensando en el rugby." << std::endl;
+                std::cout << "Estoy pensando en futbol americano." << std::endl;
             }
             else {
                 std::cout << "No puedo adivinar el deporte en el que estás pensando." << std::endl;
