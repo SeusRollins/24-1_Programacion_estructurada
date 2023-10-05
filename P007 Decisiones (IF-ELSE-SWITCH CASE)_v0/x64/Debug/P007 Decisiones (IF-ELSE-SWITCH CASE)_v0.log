@@ -1,4 +1,4 @@
 ﻿  P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(16,9): warning C4101: 'torneoe': variable local sin referencia
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(15,9): warning C4101: 'elimination': variable local sin referencia
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(102): error C4700: se utilizó la variable local 'ganador' sin inicializar
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(16,9): warning C4101: 'torneoe': unreferenced local variable
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(15,9): warning C4101: 'elimination': unreferenced local variable
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp(102): error C4700: uninitialized local variable 'ganador' used

@@ -1,5 +1,6 @@
 // P003_Mayor_que_Menor_que_v0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//GilPulido
+//en este algoritmo se busca ver si el numero es mayo o menor o igual
 
 #include <iostream>
 #include <math.h>

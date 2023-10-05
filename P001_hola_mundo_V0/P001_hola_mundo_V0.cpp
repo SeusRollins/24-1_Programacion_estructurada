@@ -1,6 +1,6 @@
 // P001_hola_mundo_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //Gilberto Emmanuel Pulido Lopez
-// ver hola mundo
+// ver hola mundo y syntasi basica
 
 //Librerias
 #include <iostream>

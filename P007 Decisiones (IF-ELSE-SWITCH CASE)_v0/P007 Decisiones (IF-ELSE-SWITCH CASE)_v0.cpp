@@ -99,7 +99,7 @@ int main()
         std::cout << "elije un numero del 1 al 6\n";
         std::cin >> num;
 
-        if (num == ganador)
+        if (num ==ganador)
         {
             std::cout << "felicidades haz ganado la Elimination Chamber\n";
             std::cout << "ahora eres el nuevo campeon mundial\n";

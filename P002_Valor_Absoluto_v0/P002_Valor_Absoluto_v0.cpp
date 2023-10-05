@@ -1,5 +1,6 @@
 // P002_Valor_Absoluto_v0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//GilPulido
+// buscar sacar el valor asoluto de un numero 
 #include <cmath>
 #include <iostream>
 

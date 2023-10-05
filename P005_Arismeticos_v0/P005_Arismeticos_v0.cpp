@@ -1,4 +1,5 @@
 // P005_Arismeticos_v0.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//GilPulido
 //
 
 #include <iostream>
