@@ -126,9 +126,9 @@ int main()
                 std::cout << "El valor absoluto es " << valorAbsoluto;
                 break;
             }
-            bool seguir = true;
+            
             std::cout << "Deseas realizar otra operacion? 0.- NO 1.- SI: ";
-            std::cin >> seguir;
+            std::cin >> repetir;
             system("cls");
         }
         catch (const std::exception& e)
