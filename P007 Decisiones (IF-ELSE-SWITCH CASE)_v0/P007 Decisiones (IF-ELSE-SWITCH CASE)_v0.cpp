@@ -134,7 +134,7 @@ int main()
         }
     }
     bool seguir = true;
-    std::cout << "Deseas repetir el pograma? 0.- NO 1.- SI: ";
+    std::cout << "Deseas luchar otra vez? 0.- NO 1.- SI: ";
     std::cin >> seguir;
     system("cls");
 

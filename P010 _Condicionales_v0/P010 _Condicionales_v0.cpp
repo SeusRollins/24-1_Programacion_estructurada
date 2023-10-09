@@ -39,7 +39,7 @@ int main()
         }
     } while (usuario != usuario_correcto);  (contrasena != contrasena_correcta);
 
-    std::cout << "Deseas repetir el programa? 0.- NO 1.- SI: ";
+    std::cout << "Deseas repetir tu usuario y contraseña? 0.- NO 1.- SI: ";
     std::cin >> seguir;
     system("cls");
     return 0;

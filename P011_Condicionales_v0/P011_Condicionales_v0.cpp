@@ -91,7 +91,7 @@ int main() {
         }
 
         bool seguir = true;
-        std::cout << "Deseas repetir el programa? 0.- NO 1.- SI: ";
+        std::cout << "Deseas que te adivine otro deporte? 0.- NO 1.- SI: ";
         std::cin >> seguir;
         system("cls");
 
