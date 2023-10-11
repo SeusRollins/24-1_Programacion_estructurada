@@ -8,40 +8,40 @@
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
-    //usuarios correctos
-    std::string usuario_correcto = "usuario123";
-    std::string contrasena_correcta = "contraseña123";
+    // Usuarios y contraseñas correctas
+    std::string usuario_correcto = "wolf123";
+    std::string contrasena_correcta = "c123456";
 
     bool seguir = true;
 
-    std::string usuario;
-    std::string contrasena;
     do
     {
-        // pedir datos al usuario   
-        std::cout << "bienvenido a los juegos del hambre\n";
-        std::cout << "inicia sesion por favor\n";
-        std::cout << "cual es tu nombre de usuario\n";
+        std::string usuario;
+        std::string contrasena;
+
+        std::cout << "Bienvenido a los juegos del hambre\n";
+        std::cout << "Inicia sesión por favor\n";
+        std::cout << "¿Cuál es tu nombre de usuario\n";
         std::cin >> usuario;
-        std::cout << "cual es tu contraseña\n";
-        std::cin >> contrasena;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        std::cout << "¿Cuál es tu contraseña\n";
+        std::getline(std::cin, contrasena);
 
         if (usuario == usuario_correcto && contrasena == contrasena_correcta)
         {
-            std::cout << "bienvenido\n";
-            std::cout << "tu usuario y contraseña son correctos\n";
-            std::cout << "disfruta el juego\n";
-
+            std::cout << "Bienvenido\n";
+            std::cout << "Tu usuario y contraseña son correctos\n";
+            std::cout << "Disfruta el juego\n";
+            seguir = false;     
         }
         else
         {
-            std::cout << "tu usuario o tu contraseña estan equivocado\n";
+            std::cout << "Tu usuario o tu contraseña están equivocados\n";
+            std::cout << "¿Deseas repetir tu usuario y contraseña? 0 - NO 1 - SI: ";
+            std::cin >> seguir;
         }
-    } while (usuario != usuario_correcto);  (contrasena != contrasena_correcta);
+    } while (seguir);
 
-    std::cout << "Deseas repetir tu usuario y contraseña? 0.- NO 1.- SI: ";
-    std::cin >> seguir;
-    system("cls");
     return 0;
 }
-

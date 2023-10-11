@@ -11,9 +11,9 @@ int main()
 {
     setlocale(LC_ALL, "es_Mx.UTF-8");
     bool sintoma1, sintoma2, sintoma3;
-    std::string Nombre;
+    std::string nombre;
     std::string Relato;
-    char sexo;
+    bool sexo;
     int edad;
     int peso;
     float altura;
@@ -28,17 +28,20 @@ int main()
     std::cin >> sintoma2;
     std::cout << "Tienes dolor de cuerpo 1 es si 0 es no" << std::endl;
     std::cin >> sintoma3;
+    std::cout << "cual es tu sexo 1-hombre 0- mujer"<<std::endl;
+    std::cin >> sexo;
+    std::cin.ignore();
     std::cout << "Cual es tu Nombre" << std::endl << std::endl;
-    std::cin>> Nombre;
+    std::getline(std::cin, nombre);
     std::cout << "cuentame desde cuando te sientes asi " << std::endl;
-    std::cin >> Relato;
+    std::getline(std::cin, Relato);
     std::cout << "Cual es tu edad " << std::endl;
     std::cin >> edad;
     std::cout << "cual es tu peso " << std::endl;
     std::cin >> peso;
     std::cout << "cuales tu altura " << std::endl;
     std::cin >> altura;
-    IMC = peso / altura;
+    IMC = peso / (altura * altura);
     std::cout << "tu indice de masa corporal " << IMC << std::endl;
 
   
@@ -48,14 +51,3 @@ int main()
 
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

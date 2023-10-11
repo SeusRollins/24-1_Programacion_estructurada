@@ -27,7 +27,7 @@ int main()
     switch (opc)
     {
     case 1:
-        ganador = 1, 3, 6, 27, 10, 13, 14, 20;
+        ganador = 1, 3, 6, 27, 10, 13, 14, 20,27,30;
       
         
         std::cout << "Bienvenido al modo royal rumble\n";
@@ -98,6 +98,7 @@ int main()
         std::cout << "Elije el numero de entrada de tu luchador\n";
         std::cout << "elije un numero del 1 al 6\n";
         std::cin >> num;
+        ganador = 1, 3, 6;
 
         if (num ==ganador)
         {
@@ -118,6 +119,7 @@ int main()
         std::cout << "Bienvenido a modo torneo\n";
         std::cout << "cual sera tu numero en el toneo del 1 al 16\n";
         std::cin >> num;
+        ganador = 2, 3, 7, 10, 14, 16;
 
         if (num == ganador)
         {
@@ -133,9 +135,9 @@ int main()
 
         }
     }
-    bool seguir = true;
+   
     std::cout << "Deseas luchar otra vez? 0.- NO 1.- SI: ";
-    std::cin >> seguir;
+    std::cin >> repetir;
     system("cls");
 
     }
