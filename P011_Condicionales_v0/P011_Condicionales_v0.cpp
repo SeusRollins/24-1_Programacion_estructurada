@@ -90,9 +90,9 @@ int main() {
             }
         }
 
-        bool seguir = true;
+       
         std::cout << "Deseas que te adivine otro deporte? 0.- NO 1.- SI: ";
-        std::cin >> seguir;
+        std::cin >> repetir;
         system("cls");
 
     }
