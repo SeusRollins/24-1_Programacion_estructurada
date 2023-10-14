@@ -13,7 +13,7 @@ int main()
     std::string respuesta;
     int i = 100;
     bool repetir = false;
-    do
+    while (repetir);
     {
         std::cout << "Hola Bienvenido al infierno de los Dioses, en este juego tienes 3 vidas \n" <<
             "Donde tus son tu salvacion o tu condena dependen de ti\n"
@@ -67,7 +67,7 @@ int main()
                         std::cout << "pero tu mueres como un dios , como un heroe, como una leyenda\n";
                         std::cout << "has perdido pero tienes mi respeto\n";
                         std::cout << "pierdes la vida ante un demonio\n";
-                        std::cout << "Deseas volver a jugar? s/n \n";
+                        std::cout << "Te gusto el juego ? s/n \n";
                         std::cin >> respuesta;
 
 
@@ -82,7 +82,7 @@ int main()
                     {
                         std::cout << "fuiste muy valiente pero al final te falto valor\n";
                         std::cout << "has sido asesinado por un demonio\n";
-                     
+                        std::cout << "Game Over/n";
                     }
                     for (i = 100; i >= 0; i--)
                     {
@@ -115,8 +115,11 @@ int main()
             std::cout << "Game Over\n";
             system("cls");
         }
+        std::cout << "Deseas volver a jugar? 0.- NO 1.- SI: ";
+        std::cin >> repetir;
+        system("cls");
 
-    } while (true);
+    } 
     system("cls");
     return 0;
 
