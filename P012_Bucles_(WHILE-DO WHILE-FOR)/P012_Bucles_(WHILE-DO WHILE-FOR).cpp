@@ -115,7 +115,7 @@ int main()
             std::cout << "Game Over\n";
             system("cls");
         }
-        std::cout << "Deseas volver a jugar? 0.- NO 1.- SI: ";
+        std::cout << "Deseas volver a jugar? 0.- NO 1.-SI: \n";
         std::cin >> repetir;
         system("cls");
 

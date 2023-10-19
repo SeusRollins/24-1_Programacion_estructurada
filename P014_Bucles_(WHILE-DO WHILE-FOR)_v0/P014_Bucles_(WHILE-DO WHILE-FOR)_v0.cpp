@@ -12,35 +12,60 @@ void delay(int millisegundos)
 int main()
 {
     bool repetir = true;
+    int opt;
     while (repetir)
     {
-        //de 1000 a 0
-        for (int i = 1000; i >= 0; i--)
+        std::cout << "1.-de 1000 a 0, 2.-0 a 100 lento,3.-10*10\n";
+        std::cout << "que contadorquieres utilizar?\n";
+        std::cin >> opt;
+        switch (opt)
         {
-            std::cout << "Contador" << i << std::endl;
-        }
-        std::cout << std::endl;
-        system("cls");
-        // contar lento 0 a 100
-        for (int i = 0; i <= 100; i++)
-        {
-            std::cout << "Contador" << i << std::endl;
-            delay(100);
-        }
-        std::cout << std::endl;
-        system("cls");
-        //10*10
-        for (int i = 1; i <= 10; i++)
-        {
-            for (int j = 1; j <= 10; j++) {
-                std::cout << "Contador" << i * j << std::endl;
+        default:
+            break;
+        case 1:
+
+            //de 1000 a 0
+            for (int i = 1000; i >= 0; i--)
+            {
+                std::cout << "Contador" << i << std::endl;
+               
+            }
+
+            std::cout << std::endl;
+            system("cls");
+            break;
+
+        case 2:
+
+            // contar lento 0 a 100
+            for (int i = 0; i <= 100; i++)
+            {
+                std::cout << "Contador" << i << std::endl;
+                delay(200);
             }
             std::cout << std::endl;
             system("cls");
+            break;
+        case 3:
+            //10*10
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++) {
+                    std::cout << "Contador" << i * j << std::endl;
+                    delay(100);
+                }
+                std::cout << std::endl;
+                system("cls");
+                break;
+            }
         }
         std::cout << "Deseas repetir el contador? 0.- NO 1.- SI: ";
         std::cin >> repetir;
         system("cls");
+
     }
-    return 0;
+
+        
+       return 0;
+    
 }
