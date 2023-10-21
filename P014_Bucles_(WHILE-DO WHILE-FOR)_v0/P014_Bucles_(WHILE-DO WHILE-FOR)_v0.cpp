@@ -48,15 +48,12 @@ int main()
             break;
         case 3:
             //10*10
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                for (int j = 1; j <= 10; j++) {
-                    std::cout << "Contador" << i * j << std::endl;
-                    delay(100);
+                std::cout << i << " ";
+                if (i % 10 == 0) {
+                    std::cout << std::endl;
                 }
-                std::cout << std::endl;
-                system("cls");
-                break;
             }
         }
         std::cout << "Deseas repetir el contador? 0.- NO 1.- SI: ";

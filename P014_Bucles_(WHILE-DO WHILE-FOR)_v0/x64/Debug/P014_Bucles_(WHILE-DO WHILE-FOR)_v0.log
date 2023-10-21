@@ -1,1 +1,3 @@
-﻿LINK : fatal error LNK1168: cannot open C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\x64\Debug\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.exe for writing
+﻿  P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp
+  LINK : no se encontró C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\x64\Debug\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  P014_Bucles_(WHILE-DO WHILE-FOR)_v0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\x64\Debug\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.exe
