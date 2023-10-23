@@ -13,6 +13,7 @@ private:
     int hp;
     int attack;
     int defense;
+    
 
 public:
     Pokemon(std::string n, int h, int a, int d) : name(n), hp(h), attack(a), defense(d) {}
@@ -36,9 +37,13 @@ public:
 
 int main() {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
+    bool repetir = true;
 
     srand(static_cast<unsigned>(time(nullptr)));
+    while (repetir)
+    {
 
+    
     std::cout << "Elige tu Pokémon:\n";
     std::cout << "1. Pikachu\n";
     std::cout << "2. Charmander\n";
@@ -85,6 +90,9 @@ int main() {
             break;
         }
     }
-
+    std::cout << "Deseas volver a jugar? 0.- NO 1.- SI: ";
+    std::cin >> repetir;
+    system("cls");
+    }
     return 0;
 }
