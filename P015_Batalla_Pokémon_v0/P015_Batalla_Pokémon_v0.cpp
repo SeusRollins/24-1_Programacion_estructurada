@@ -8,13 +8,14 @@
 #include <locale>
 
 class Pokemon {
-public:
+private:
     std::string name;
     int hp;
     int attack;
     int defense;
 
-    Pokemon(string, int h, int a, int d) : name(n), hp(h), attack(a), defense(d) {}
+public:
+    Pokemon(std::string n, int h, int a, int d) : name(n), hp(h), attack(a), defense(d) {}
 
     void takeDamage(int damage) {
         hp -= damage;
@@ -23,10 +24,17 @@ public:
     bool isFainted() {
         return hp <= 0;
     }
+
+    std::string getName() {
+        return name;
+    }
+
+    int getHP() {
+        return hp;
+    }
 };
 
-int main()
-{
+int main() {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
 
     srand(static_cast<unsigned>(time(nullptr)));
@@ -46,34 +54,34 @@ int main()
         oponentePokemon = Pokemon("Pikachu", 60, 8, 7);
     }
 
-    std::cout << "Has elegido a " << usuarioPokemon.name << "." << std::endl;
+    std::cout << "Has elegido a " << usuarioPokemon.getName() << "." << std::endl;
 
     while (!usuarioPokemon.isFainted() && !oponentePokemon.isFainted()) {
         int userAttack;
-        int opponentAttack = rand() % oponentePokemon.attack;
+        int opponentAttack = rand() % oponentePokemon.getHP();
 
-        std::cout << "Selecciona un ataque para " << usuarioPokemon.name << " (1. Ataque rápido, 2. Ataque fuerte): ";
+        std::cout << "Selecciona un ataque para " << usuarioPokemon.getName() << " (1. Ataque rápido, 2. Ataque fuerte): ";
         std::cin >> userAttack;
 
-        int userDamage = (userAttack == 1) ? usuarioPokemon.attack / 2 : usuarioPokemon.attack;
-        int opponentDamage = rand() % oponentePokemon.attack;
+        int userDamage = (userAttack == 1) ? usuarioPokemon.getHP() / 2 : usuarioPokemon.getHP();
+        int opponentDamage = rand() % oponentePokemon.getHP();
 
         oponentePokemon.takeDamage(userDamage);
         usuarioPokemon.takeDamage(opponentDamage);
 
-        std::cout << usuarioPokemon.name << " ataca a " << oponentePokemon.name << " con un ataque de " << userDamage << " puntos." << std::endl;
-        std::cout << oponentePokemon.name << " tiene " << oponentePokemon.hp << " puntos de vida restantes." << std::endl;
+        std::cout << usuarioPokemon.getName() << " ataca a " << oponentePokemon.getName() << " con un ataque de " << userDamage << " puntos." << std::endl;
+        std::cout << oponentePokemon.getName() << " tiene " << oponentePokemon.getHP() << " puntos de vida restantes." << std::endl;
 
         if (oponentePokemon.isFainted()) {
-            std::cout << oponentePokemon.name << " se ha debilitado. " << usuarioPokemon.name << " gana la batalla." << std::endl;
+            std::cout << oponentePokemon.getName() << " se ha debilitado. " << usuarioPokemon.getName() << " gana la batalla." << std::endl;
             break;
         }
 
-        std::cout << oponentePokemon.name << " ataca a " << usuarioPokemon.name << " con un ataque de " << opponentDamage << " puntos." << std::endl;
-        std::cout << usuarioPokemon.name << " tiene " << usuarioPokemon.hp << " puntos de vida restantes." << std::endl;
+        std::cout << oponentePokemon.getName() << " ataca a " << usuarioPokemon.getName() << " con un ataque de " << opponentDamage << " puntos." << std::endl;
+        std::cout << usuarioPokemon.getName() << " tiene " << usuarioPokemon.getHP() << " puntos de vida restantes." << std::endl;
 
         if (usuarioPokemon.isFainted()) {
-            std::cout << usuarioPokemon.name << " se ha debilitado. " << oponentePokemon.name << " gana la batalla." << std::endl;
+            std::cout << usuarioPokemon.getName() << " se ha debilitado. " << oponentePokemon.getName() << " gana la batalla." << std::endl;
             break;
         }
     }
