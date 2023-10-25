@@ -2,66 +2,61 @@
 //GilPulido
 
 #include <iostream>
-#include <ctime>
+#include <chrono>
+#include <thread>
 
 void delay(int millisegundos)
 {
-    clock_t tiempo_de_carga = clock();
-    while (clock() < tiempo_de_carga + millisegundos);
+    std::this_thread::sleep_for(std::chrono::milliseconds(millisegundos));
 }
+
 int main()
 {
     bool repetir = true;
     int opt;
     while (repetir)
     {
-        std::cout << "1.-de 1000 a 0, 2.- 0 a 100 lento,3.-10*10\n";
-        std::cout << "que contadorquieres utilizar?\n";
+        std::cout << "1.- de 1000 a 0, 2.- 0 a 100 lento, 3.- 10x10\n";
+        std::cout << "¿Qué contador quieres utilizar?\n";
         std::cin >> opt;
         switch (opt)
         {
         default:
             break;
         case 1:
-
-            //de 1000 a 0
-            //for
+            // de 1000 a 0
+            // for
             for (int i = 1000; i >= 0; i--)
             {
-                std::cout << "Contador" << i << std::endl;
-
+                std::cout << "Contador " << i << std::endl;
             }
-            //while
+            // while
             int i = 0;
             while (i <= 1000) {
-                std::cout << "contador" << i << " ";
+                std::cout << "Contador " << i << " ";
                 i++;
             }
-            //do
+            // do-while
             int contador = 0;
             do {
                 std::cout << contador << " ";
                 contador++;
-            } while (i <= 1000);
+            } while (contador <= 1000);
             std::cout << std::endl;
-            system("cls");
             break;
-        
 
         case 2:
-
-            // contar lento 0 a 100
-            i = 0;
+            // contar lentamente de 0 a 100
             for (int i = 0; i <= 100; i++)
             {
-                std::cout << "Contador" << i << std::endl;
+                std::cout << "Contador " << i << std::endl;
                 delay(200);
             }
             std::cout << std::endl;
-            system("cls");
             break;
+
         case 3:
-            //10*10
+            // 10x10
             for (int i = 1; i <= 100; i++)
             {
                 std::cout << i << " ";
@@ -71,13 +66,9 @@ int main()
             }
             break;
         }
-        std::cout << "Deseas repetir el contador? 0.- NO 1.- SI: ";
+        std::cout << "¿Deseas repetir el contador? 0.- NO 1.- SI: ";
         std::cin >> repetir;
-        system("cls");
-
     }
 
-        
-       return 0;
-    
+    return 0;
 }
