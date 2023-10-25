@@ -22,10 +22,10 @@ int main()
         std::cout << "Bienvenido a los juegos del hambre\n ";
         std::cout << "Inicia sesión por favor\n ";
         std::cout << "¿Cuál es tu nombre de usuario?\n";
-        std::cin >> usuario;
+        std::getline(std::cin, usuario);
 
         std::cout << "¿Cuál es tu contraseña?\n ";
-        std::cin >> contrasena;
+        std::getline(std::cin, contrasena);
 
         if (usuario == usuario_correcto && contrasena == contrasena_correcta)
         {
