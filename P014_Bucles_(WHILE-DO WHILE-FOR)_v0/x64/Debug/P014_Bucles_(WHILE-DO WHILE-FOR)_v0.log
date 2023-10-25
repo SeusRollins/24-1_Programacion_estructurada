@@ -1,7 +1,9 @@
 ﻿  P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): error C2374: 'i': redefinition; multiple initialization
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(33,17): message : see declaration of 'i'
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(47,9): error C2360: initialization of 'i' is skipped by 'case' label
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): message : see declaration of 'i'
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(58,9): error C2360: initialization of 'i' is skipped by 'case' label
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): message : see declaration of 'i'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(51,9): error C2360: initialization of 'contador' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(41,17): message : see declaration of 'contador'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(51,9): error C2360: initialization of 'i' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(35,17): message : see declaration of 'i'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(63,9): error C2360: initialization of 'contador' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(41,17): message : see declaration of 'contador'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(63,9): error C2360: initialization of 'i' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(35,17): message : see declaration of 'i'

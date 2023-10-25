@@ -25,28 +25,33 @@ int main()
         case 1:
 
             //de 1000 a 0
+            //for
             for (int i = 1000; i >= 0; i--)
             {
                 std::cout << "Contador" << i << std::endl;
-               
+
             }
+            //while
             int i = 0;
-            while (i <= 1000){
+            while (i <= 1000) {
                 std::cout << "contador" << i << " ";
-            i++;
-            }
-            int i= 0;
-            do {
-                std::cout << i << " ";
                 i++;
+            }
+            //do
+            int contador = 0;
+            do {
+                std::cout << contador << " ";
+                contador++;
             } while (i <= 1000);
             std::cout << std::endl;
             system("cls");
             break;
+        
 
         case 2:
 
             // contar lento 0 a 100
+            i = 0;
             for (int i = 0; i <= 100; i++)
             {
                 std::cout << "Contador" << i << std::endl;
@@ -64,6 +69,7 @@ int main()
                     std::cout << std::endl;
                 }
             }
+            break;
         }
         std::cout << "Deseas repetir el contador? 0.- NO 1.- SI: ";
         std::cin >> repetir;
