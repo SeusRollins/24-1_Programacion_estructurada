@@ -1,3 +1,7 @@
 ﻿  P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp
-  LINK : no se encontró C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\x64\Debug\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
-  P014_Bucles_(WHILE-DO WHILE-FOR)_v0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\x64\Debug\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.exe
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): error C2374: 'i': redefinition; multiple initialization
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(33,17): message : see declaration of 'i'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(47,9): error C2360: initialization of 'i' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): message : see declaration of 'i'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(58,9): error C2360: initialization of 'i' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P014_Bucles_(WHILE-DO WHILE-FOR)_v0\P014_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp(38,17): message : see declaration of 'i'

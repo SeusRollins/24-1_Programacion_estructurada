@@ -30,7 +30,16 @@ int main()
                 std::cout << "Contador" << i << std::endl;
                
             }
-
+            int i = 0;
+            while (i <= 1000){
+                std::cout << "contador" << i << " ";
+            i++;
+            }
+            int i= 0;
+            do {
+                std::cout << i << " ";
+                i++;
+            } while (i <= 1000);
             std::cout << std::endl;
             system("cls");
             break;
