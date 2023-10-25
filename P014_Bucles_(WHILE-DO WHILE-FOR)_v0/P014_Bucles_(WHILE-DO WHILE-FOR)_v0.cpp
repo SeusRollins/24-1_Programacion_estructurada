@@ -15,7 +15,7 @@ int main()
     int opt;
     while (repetir)
     {
-        std::cout << "1.-de 1000 a 0, 2.-0 a 100 lento,3.-10*10\n";
+        std::cout << "1.-de 1000 a 0, 2.- 0 a 100 lento,3.-10*10\n";
         std::cout << "que contadorquieres utilizar?\n";
         std::cin >> opt;
         switch (opt)
