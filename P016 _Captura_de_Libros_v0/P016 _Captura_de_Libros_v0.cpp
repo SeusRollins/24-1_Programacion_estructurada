@@ -3,48 +3,52 @@
 
 #include <iostream>
 #include <string>
-#include<locale.h>
+#include <locale.h>
 
 int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
     std::string nombres[4];
-        int anio[4];
+    int anio[4];
     std::string autor[4];
     std::string estudio[4];
     bool repetir = true;
 
-    while(repetir)
-    { 
-    //PRIMER BUCLE
-    //captuda de datos
-
-    for (int i = 0; i <= 4; i++)
+    while (repetir)
     {
-        
-        std::cout << "cual es el nombre del videjuego no.:" << i + 1 << std::endl;
-        getline(std::cin, nombres[i]);
-        std::cout << "De que año es el videojuego no.:" << i + 1 << std::endl;
-        std::cin >> anio[i];
-        std::cin.ignore();
-        std::cout << "cual es el autor del videojuego no.:" << i + 1 << std::endl;
-        getline(std::cin, autor[i]);
-        std::cout << "cual es el estudio desarrollador del juego no.:" << i + 1 << std::endl;
-        getline(std::cin, estudio[i]);
+        // PRIMER BUCLE: Captura de datos
+        for (int i = 0; i < 4; i++)
+        {
+            std::cout << "¿Cual es el nombre del videojuego? no. " << i + 1 << "?\n";
+            getline(std::cin, nombres[i]);
 
-    }
-   //SEGUNDO BUCLE 
-    //mostrar datos
-    for (int j = 0; j <= 4; j++)
-    {
-        std::cout << "El juego" << j + 1 << "se llama" << nombres[j] << std::endl;
-        std::cout << "El juego" << j + 1 << "es del año" << anio[j] << std::endl;
-        std::cout << "El juego" << j + 1 << "es del autor" << autor[j] << std::endl;
-        std::cout << "El juego" << j + 1 << "es de la desarrolladora" << estudio[j];
+            std::cout << "¿De que año es el videojuego? no. " << i + 1 << "?\n";
+            std::cin >> anio[i];
+            std::cin.ignore();
 
+            std::cout << "¿Cual es el autor del videojuego? no. " << i + 1 << "?\n";
+            getline(std::cin, autor[i]);
+
+            std::cout << "¿Cuál es el estudio desarrollador del juego no. " << i + 1 << "?\n";
+            getline(std::cin, estudio[i]);
+        }
+
+        // SEGUNDO BUCLE: Mostrar datos
+        for (int j = 0; j < 4; j++)
+        {
+            std::cout << "El juego " << j + 1 << " se llama " << nombres[j] << "\n";
+            std::cout << "El juego " << j + 1 << " es del año " << anio[j] << "\n";
+            std::cout << "El juego " << j + 1 << " es del autor " << autor[j] << "\n";
+            std::cout << "El juego " << j + 1 << " es de la desarrolladora " << estudio[j] << "\n";
+        }
+
+        std::cout << "¿Deseas repetir la captura de datos? 0.- NO 1.- SI: ";
+        std::cin >> repetir;
+        std::cin.ignore(); // Limpiar el búfer de entrada
+
+        // Limpia la pantalla
+        system("cls");
     }
-    std::cout << "Deseas repetir la captura de datos? 0.- NO 1.- SI: \n";
-    std::cin >> repetir;
-    system("cls");
-    }
+    return 0;
 }
+

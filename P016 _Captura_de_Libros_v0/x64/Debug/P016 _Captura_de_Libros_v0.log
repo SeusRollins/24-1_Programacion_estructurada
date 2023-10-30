@@ -1,3 +1,2 @@
 ﻿  P016 _Captura_de_Libros_v0.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1134,5): error MSB6006: "link.exe" exited with code 1168.
-LINK : fatal error LNK1168: cannot open C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P016 _Captura_de_Libros_v0\x64\Debug\P016 _Captura_de_Libros_v0.exe for writing
+  P016 _Captura_de_Libros_v0.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P016 _Captura_de_Libros_v0\x64\Debug\P016 _Captura_de_Libros_v0.exe
