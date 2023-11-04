@@ -1,0 +1,9 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(16,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(42,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(43,9): error C2374: 'unidades': nueva definición; inicialización múltiple
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(17,9): message : vea la declaración de 'unidades'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(48,9): error C2374: 'filas': nueva definición; inicialización múltiple
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(22,9): message : vea la declaración de 'filas'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(50,9): error C2374: 'columnas': nueva definición; inicialización múltiple
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ConsoleApplication2\ConsoleApplication2.cpp(24,9): message : vea la declaración de 'columnas'

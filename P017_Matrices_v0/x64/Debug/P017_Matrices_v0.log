@@ -1,0 +1,10 @@
+﻿  P017_Matrices_v0.cpp
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(28,19): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(48,5): error C2360: la inicialización de 'columnas' se omite en la etiqueta 'case'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(33,13): message : vea la declaración de 'columnas'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(48,5): error C2360: la inicialización de 'filas' se omite en la etiqueta 'case'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(31,14): message : vea la declaración de 'filas'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(50,5): error C2361: la inicialización de 'columnas' se omite en la etiqueta 'default'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(33,13): message : vea la declaración de 'columnas'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(50,5): error C2361: la inicialización de 'filas' se omite en la etiqueta 'default'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P017_Matrices_v0\P017_Matrices_v0.cpp(31,14): message : vea la declaración de 'filas'

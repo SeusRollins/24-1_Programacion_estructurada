@@ -1,0 +1,3 @@
+﻿  ClasePractica009.cpp
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ClasePractica009\ClasePractica009.cpp(19,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  ClasePractica009.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\ClasePractica009\x64\Debug\ClasePractica009.exe
