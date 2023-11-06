@@ -3,11 +3,11 @@
 
 #include <iostream>
 #include <string>
-#include <locale.h>
+
 
 int main()
 {
-    setlocale(LC_ALL, "es_MX.UTF-8");
+   
     std::string nombres[4];
     int anio[4];
     std::string autor[4];
@@ -21,16 +21,18 @@ int main()
         {
             std::cout << "¿Cual es el nombre del videojuego? no. " << i + 1 << "?\n";
             getline(std::cin, nombres[i]);
-
-            std::cout << "¿De que año es el videojuego? no. " << i + 1 << "?\n";
-            std::cin >> anio[i];
+      
+            std::cout << "¿Cual es la fecha de lanzamiento videojuego? no. " << i + 1 << "?\n";
+            std::cin>> anio[i];
             std::cin.ignore();
 
             std::cout << "¿Cual es el autor del videojuego? no. " << i + 1 << "?\n";
             getline(std::cin, autor[i]);
+          
 
             std::cout << "¿Cuál es el estudio desarrollador del juego no. " << i + 1 << "?\n";
             getline(std::cin, estudio[i]);
+         
         }
 
         // SEGUNDO BUCLE: Mostrar datos
