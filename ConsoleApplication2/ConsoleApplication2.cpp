@@ -1,66 +1,75 @@
-// ConsoleApplication2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
-#include <windows.h>
 #include <chrono>
 #include <thread>
+#include <ctime>
 
 void delay(int millisegundos)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(millisegundos));
 }
+
+void llenarMatrizAleatoria(int matriz[][10], int filas, int columnas)
+{
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            matriz[i][j] = std::rand() % 11; // Rellena la matriz con números aleatorios entre 0 y 10
+        }
+    }
+}
+
+void mostrarMatriz(int matriz[][10], int filas, int columnas)
+{
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            std::cout << "matriz[" << i << "][" << j << "]: " << matriz[i][j] << "\t";
+            delay(200);
+        }
+        std::cout << "\n";
+    }
+}
+
 int main()
 {
-    //Le estamos dando el semillero
-    srand(time(NULL));
-    int unidades[3][3] = { {1,2,3},
-                            {4,3,2,},
-                            {5,6,7,},
-    };
-    //Formula para saber filas y columnas
-    int filas = sizeof(unidades) / sizeof(unidades[0]);
-    std::cout << "El num de filas es: " << filas << std::endl;
-    int columnas = sizeof(unidades[0]) / sizeof(unidades[0][0]);
-    std::cout << "El num de columnas es: " << columnas << std::endl;
-    //Ciclo para mostrar la información de la matriz.
-    //Ciclo para recorrer las filas.
-    for (int i = 0; i < filas; i++)
-    {
-        //Ciclo dentro para recorrer las columnas.
-        for (int j = 0; j < columnas; j++)
-        {
-            unidades[i][j] = rand() % 9;
-            std::cout << unidades[i][j] << " ";
-            delay(200);
-        }
-        std::cout << "\n";
-    }
-    std::cout << "\n";
-    std::cout << "\n";
-    //Le estamos dando el semillero
-    srand(time(NULL));
-    int unidades[3][3] = { {1,2,3},
-                            {4,3,2,},
-                            {5,6,7,},
-    };
-    //Formula para saber filas y columnas
-    int filas = sizeof(unidades) / sizeof(unidades[0]);
-    std::cout << "El num de filas es: " << filas << std::endl;
-    int columnas = sizeof(unidades[0]) / sizeof(unidades[0][0]);
-    std::cout << "El num de columnas es: " << columnas << std::endl;
-    //Ciclo para mostrar la información de la matriz.
-    //Ciclo para recorrer las filas.
-    for (int i = 0; i < filas; i++)
-    {
-        //Ciclo dentro para recorrer las columnas.
-        for (int j = 0; j < columnas; j++)
-        {
-            unidades[i][j] = rand() % 9;
-            std::cout << unidades[i][j] << " ";
-            delay(200);
-        }
-        std::cout << "\n";
-    }
+    std::srand(static_cast<unsigned>(std::time(nullptr)));
+    int matriz3x3[3][3];
+    int matriz5x5[5][5];
+    int matriz10x10[10][10];
 
+    llenarMatrizAleatoria(matriz3x3, 3, 3);
+    llenarMatrizAleatoria(matriz5x5, 5, 5);
+    llenarMatrizAleatoria(matriz10x10, 10, 10);
+
+    int opcion;
+    do
+    {
+        std::cout << "Elija una matriz para ver (1 - 3x3, 2 - 5x5, 3 - 10x10, 0 - Salir): ";
+        std::cin >> opcion;
+
+        switch (opcion)
+        {
+        case 1:
+            std::cout << "Matriz 3x3:\n";
+            mostrarMatriz(matriz3x3, 3, 3);
+            break;
+        case 2:
+            std::cout << "Matriz 5x5:\n";
+            mostrarMatriz(matriz5x5, 5, 5);
+            break;
+        case 3:
+            std::cout << "Matriz 10x10:\n";
+            mostrarMatriz(matriz10x10, 10, 10);
+            break;
+        case 0:
+            std::cout << "Saliendo del programa.\n";
+            break;
+        default:
+            std::cout << "Opción no válida. Por favor, elija una opción válida.\n";
+        }
+    } while (opcion != 0);
+
+    return 0;
 }
