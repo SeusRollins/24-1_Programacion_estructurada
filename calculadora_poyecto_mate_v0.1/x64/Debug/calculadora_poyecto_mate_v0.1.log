@@ -1,4 +1,2 @@
 ﻿  calculadora_poyecto_mate_v0.1.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(129,13): error C2059: syntax error: '}'
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(127,13): error C2360: initialization of 'valorAbsoluto' is skipped by 'case' label
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(124,23): message : see declaration of 'valorAbsoluto'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(153,13): error C2059: syntax error: '}'

@@ -5,6 +5,28 @@
 #include <locale>
 #include <cmath>
 #include <stdexcept>
+//decimal a binario 
+void decimalToBinary(int decimal) {
+    if (decimal == 0) {
+        std::cout << "El número binario es: 0";
+        return;
+    }
+
+    int binary[32];
+    int i = 0;
+
+    while (decimal > 0) {
+        binary[i] = decimal % 2;
+        decimal = decimal / 2;
+        i++;
+    }
+
+    std::cout << "El número binario es: ";
+    for (int j = i - 1; j >= 0; j--) {
+        std::cout << binary[j];
+    }
+}
+
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
@@ -13,12 +35,12 @@ int main()
     float valor;
     bool repetir = true;
 
-
+  
     while (repetir)
     {
         std::cout << "Elija que operaciom quiere hacer\n 1.- Suma, 2.-Resta, 3.Multplicacion ,4- division ,5- potencia,\n" <<
-            ", 6.-Mayor o menor que, 7.-Valor absoluto , 8.- convierte de decimal a binario 9.- de binario a decimal \n" <<
-            ", 10.- suma de binarios\n";
+            ", 6.-Mayor o menor que, 7.- convierte de decimal a binario 8.- de binario a decimal, 9.- suma de binarios , \n" <<
+            ", 10.- suma de binarios, 11.-multiplicacion de binarios , 12.- division de binarios\n";
         std::cin >> operador;
 
         if (std::cin.fail())
@@ -119,13 +141,15 @@ int main()
                 }
                 break;
             case 7:
-                std::cout << "Escribe un numero flotante: ";
-                std::cin >> valor;
-                float valorAbsoluto = abs(valor);
-                std::cout << "El valor absoluto es " << valorAbsoluto;
+                int numeroDecimal;
+                std::cout << "Ingrese un número decimal: ";
+                std::cin >> numeroDecimal;
+
+                decimalToBinary(numeroDecimal);
                 break;
-            case 8:
                 
+            case 8:
+
             }
 
             std::cout << "Deseas realizar otra operacion? 0.- NO 1.- SI: ";
