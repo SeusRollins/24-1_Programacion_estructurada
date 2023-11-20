@@ -8,7 +8,7 @@
 //decimal a binario 
 void decimalToBinary(int decimal) {
     if (decimal == 0) {
-        std::cout << "El número binario es: 0";
+        std::cout << "El número binario es: 0\n";
         return;
     }
 
@@ -21,12 +21,118 @@ void decimalToBinary(int decimal) {
         i++;
     }
 
-    std::cout << "El número binario es: ";
+    std::cout << "El número binario es: \n";
     for (int j = i - 1; j >= 0; j--) {
         std::cout << binary[j];
     }
 }
+//binario a decimal
+int binaryToDecimal(int binary) {
+    int decimal = 0, base = 1, remainder;
 
+    while (binary > 0) {
+        remainder = binary % 10;
+        decimal += remainder * base;
+        binary /= 10;
+        base *= 2;
+    }
+
+    return decimal;
+}
+// Función para sumar dos números binarios
+int sumaBinaria(int binario1, int binario2) {
+    int carry = 0, resultado = 0, base = 1;
+
+    while (binario1 > 0 || binario2 > 0 || carry > 0) {
+        int bit1 = binario1 % 10;
+        int bit2 = binario2 % 10;
+
+        int sumaBits = bit1 + bit2 + carry;
+
+        resultado += (sumaBits % 2) * base;
+        carry = sumaBits / 2;
+
+        binario1 /= 10;
+        binario2 /= 10;
+        base *= 10;
+    }
+
+    return resultado;
+}
+// Función para restar dos números binarios
+int restaBinaria(int binario1, int binario2) {
+    int borrow = 0, resultado = 0, base = 1;
+
+    while (binario1 > 0 || binario2 > 0) {
+        int bit1 = binario1 % 10;
+        int bit2 = binario2 % 10;
+
+        // Restar el bit2 y el acarreo
+        int restaBits = bit1 - bit2 - borrow;
+
+        // Si la resta es negativa, se toma prestado
+        if (restaBits < 0) {
+            restaBits += 2;
+            borrow = 1;
+        }
+        else {
+            borrow = 0;
+        }
+
+        resultado += restaBits * base;
+
+        binario1 /= 10;
+        binario2 /= 10;
+        base *= 10;
+    }
+
+    return resultado;
+}
+
+// Función para multiplicar dos números binarios
+int multiplicacionBinaria(int binario1, int binario2) {
+    int resultado = 0, factor = 1;
+
+    while (binario2 > 0) {
+        int bit2 = binario2 % 10;
+
+        if (bit2 == 1) {
+            resultado = resultado + (binario1 * factor);
+        }
+
+        binario2 /= 10;
+        factor *= 10;
+    }
+
+    return resultado;
+}
+// Función para dividir dos números binarios
+void divisionBinaria(int binario1, int binario2) {
+    if (binario2 == 0) {
+        std::cout << "Error: División por cero." << std::endl;
+        return;
+    }
+
+    int cociente = 0;
+    int divisor = binario2;
+
+    while (binario1 >= divisor) {
+        int cocienteBit = 1;
+
+        // Realizar la división parcial
+        while (binario1 >= (divisor << 1)) {
+            divisor <<= 1;
+            cocienteBit <<= 1;
+        }
+
+        // Restar el divisor de binario1 y actualizar el cociente
+        binario1 -= divisor;
+        cociente += cocienteBit;
+    }
+
+    std::cout << "El cociente binario es: " << cociente << std::endl;
+    std::cout << "El residuo binario es: " << binario1 << std::endl;
+}
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
@@ -38,9 +144,9 @@ int main()
   
     while (repetir)
     {
-        std::cout << "Elija que operaciom quiere hacer\n 1.- Suma, 2.-Resta, 3.Multplicacion ,4- division ,5- potencia,\n" <<
-            ", 6.-Mayor o menor que, 7.- convierte de decimal a binario 8.- de binario a decimal, 9.- suma de binarios , \n" <<
-            ", 10.- suma de binarios, 11.-multiplicacion de binarios , 12.- division de binarios\n";
+        std::cout << "Elija que operaciom quiere hacer\n 1.- Suma, 2.-Resta, 3.Multplicacion ,4- division ,\n" <<
+            ", 5.-Mayor o menor que, 6.- convierte de decimal a binario 7.- de binario a decimal, 8.- suma de binarios , \n" <<
+            ", 9.- suma de binarios, 10.-multiplicacion de binarios , 11.- division de binarios\n";
         std::cin >> operador;
 
         if (std::cin.fail())
@@ -106,16 +212,8 @@ int main()
                 resultado = num1 / num2;
                 std::cout << "El resultado de la division es " << resultado << std::endl;
                 break;
+           
             case 5:
-                std::cout << "Ingrese el primer numero por favor\n";
-                std::cin >> num1;
-
-                std::cout << "Ingrese el segundo numero\n";
-                std::cin >> num2;
-                resultado = num1 ^ num2;
-                std::cout << "El resultado de la potencia es " << resultado << std::endl;
-                break;
-            case 6:
                 std::cout << "dame tu primer numero por favor\n";
                 std::cin >> num1;
                 std::cout << "dame tu segundo numero por favor\n ";
@@ -140,19 +238,80 @@ int main()
                     }
                 }
                 break;
-            case 7:
+            case 6:
                 int numeroDecimal;
-                std::cout << "Ingrese un número decimal: ";
+                std::cout << "Ingrese un número decimal:\n";
                 std::cin >> numeroDecimal;
 
                 decimalToBinary(numeroDecimal);
                 break;
                 
+            case 7:
+                int numeroBinario;
+                std::cout << "Ingrese un número binario:\n";
+                std::cin >> numeroBinario;
+
+                int resultadoDecimal = binaryToDecimal(numeroBinario);
+
+                std::cout << "El número decimal es:\n" << resultadoDecimal << std::endl;
+                break;
+
             case 8:
+
+                int binario1, binario2;
+
+                std::cout << "Ingrese el primer número binario: ";
+                std::cin >> binario1;
+
+                std::cout << "Ingrese el segundo número binario: ";
+                std::cin >> binario2;
+
+                int resultadoSuma = sumaBinaria(binario1, binario2);
+
+                std::cout << "La suma binaria es: " << resultadoSuma << std::endl;
+
+                break;
+            case 9:
+                int binario1, binario2;
+
+                std::cout << "Ingrese el primer número binario: ";
+                std::cin >> binario1;
+
+                std::cout << "Ingrese el segundo número binario: ";
+                std::cin >> binario2;
+
+                int resultadoResta = restaBinaria(binario1, binario2);
+
+                std::cout << "La resta binaria es: " << resultadoResta << std::endl;
+                break;
+            case 10:
+                int binario1, binario2;
+
+                std::cout << "Ingrese el primer número binario: ";
+                std::cin >> binario1;
+
+                std::cout << "Ingrese el segundo número binario: ";
+                std::cin >> binario2;
+
+                int resultadoMultiplicacion = multiplicacionBinaria(binario1, binario2);
+
+                std::cout << "La multiplicación binaria es: " << resultadoMultiplicacion << std::endl;
+                break;
+            case 11:
+                int binario1, binario2;
+
+                std::cout << "Ingrese el numerador binario: ";
+                std::cin >> binario1;
+
+                std::cout << "Ingrese el divisor binario: ";
+                std::cin >> binario2;
+
+                divisionBinaria(binario1, binario2);
+                break;
 
             }
 
-            std::cout << "Deseas realizar otra operacion? 0.- NO 1.- SI: ";
+            std::cout << "Deseas realizar otra operacion? 0.- NO 1.- SI:\n";
             std::cin >> repetir;
             system("cls");
         }

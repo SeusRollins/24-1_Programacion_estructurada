@@ -1,2 +1,33 @@
 ﻿  calculadora_poyecto_mate_v0.1.cpp
-C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(153,13): error C2059: syntax error: '}'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(275,21): error C2086: 'int binario1': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,21): message : see declaration of 'binario1'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(275,31): error C2086: 'int binario2': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,31): message : see declaration of 'binario2'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(288,21): error C2086: 'int binario1': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,21): message : see declaration of 'binario1'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(288,31): error C2086: 'int binario2': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,31): message : see declaration of 'binario2'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(301,21): error C2086: 'int binario1': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,21): message : see declaration of 'binario1'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(301,31): error C2086: 'int binario2': redefinition
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(261,31): message : see declaration of 'binario2'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(259,13): error C2360: initialization of 'resultadoDecimal' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(254,21): message : see declaration of 'resultadoDecimal'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(274,13): error C2360: initialization of 'resultadoSuma' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(269,21): message : see declaration of 'resultadoSuma'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(274,13): error C2360: initialization of 'resultadoDecimal' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(254,21): message : see declaration of 'resultadoDecimal'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(287,13): error C2360: initialization of 'resultadoResta' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(283,21): message : see declaration of 'resultadoResta'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(287,13): error C2360: initialization of 'resultadoSuma' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(269,21): message : see declaration of 'resultadoSuma'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(287,13): error C2360: initialization of 'resultadoDecimal' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(254,21): message : see declaration of 'resultadoDecimal'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(300,13): error C2360: initialization of 'resultadoMultiplicacion' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(296,21): message : see declaration of 'resultadoMultiplicacion'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(300,13): error C2360: initialization of 'resultadoResta' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(283,21): message : see declaration of 'resultadoResta'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(300,13): error C2360: initialization of 'resultadoSuma' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(269,21): message : see declaration of 'resultadoSuma'
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(300,13): error C2360: initialization of 'resultadoDecimal' is skipped by 'case' label
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\calculadora_poyecto_mate_v0.1\calculadora_poyecto_mate_v0.1.cpp(254,21): message : see declaration of 'resultadoDecimal'
