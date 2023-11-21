@@ -1,4 +1,4 @@
-// calculadora_poyecto_mate_v0.1.cpp 
+// calculadora_poyecto_mate_v0.1.cpp
 #include <iostream>
 #include <math.h>
 #include <string>
@@ -138,60 +138,190 @@ int main()
     std::setlocale(LC_ALL, "es_MX.UTF-8");
     int num1, num2;
     int operador;
+    float valor;
     bool repetir = true;
 
-    int resultadoSuma = 0;
-    int resultadoResta = 0;
-    int resultadoMultiplicacion = 0;
-    int resultadoDecimal = 0;
 
     while (repetir)
-    {
-        std::cout << "Elija qué operación quiere hacer\n 1.- Suma, 2.- Resta, 3. Multiplicación, 4. División, "
-            "5.- Mayor o menor que, 6.- Convierte de decimal a binario, 7.- De binario a decimal, "
-            "8.- Suma de binarios, 9.- Resta de binarios, 10.- Multiplicación de binarios, 11.- División de binarios\n";
+    {   
+        std::cout << "Elija que operaciom quiere hacer\n 1.- Suma, 2.-Resta, 3.Multplicacion ,4- division ,\n" <<
+            ", 5.-Mayor o menor que, 6.- convierte de decimal a binario 7.- de binario a decimal, 8.- suma de binarios , \n" <<
+            ", 9.- suma de binarios, 10.-multiplicacion de binarios , 11.- division de binarios\n";
         std::cin >> operador;
 
         if (std::cin.fail())
         {
-            std::cerr << "Error: operación no válida.\n";
+            std::cerr << "Error operacion no valida\n .\n";
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             continue;
-        }
 
+        }
+        int resultado;
         try
         {
+
+
+            int resultado;
             switch (operador)
             {
-                // ... (código para otros casos)
-
-            case 8:
-                // ... código para la suma de binarios
-                resultadoSuma = /* resultado de la suma */;
-                std::cout << "La suma binaria es: " << resultadoSuma << std::endl;
-                break;
-            case 9:
-                // ... código para la resta de binarios
-                resultadoResta = /* resultado de la resta */;
-                std::cout << "La resta binaria es: " << resultadoResta << std::endl;
-                break;
-            case 10:
-                // ... código para la multiplicación de binarios
-                resultadoMultiplicacion = /* resultado de la multiplicación */;
-                std::cout << "La multiplicación binaria es: " << resultadoMultiplicacion << std::endl;
-                break;
-            case 11:
-                // ... código para la división de binarios
-                resultadoDecimal = /* resultado de la división */;
-                std::cout << "El resultado de la división binaria es: " << resultadoDecimal << std::endl;
+            case 0:
+                repetir = false;
                 break;
             default:
                 std::cerr << "Operador no válido. Por favor, seleccione una opción válida.\n";
                 break;
+
+
+            case 1: {
+                std::cout << "Ingrese el primer numero por favor\n";
+                std::cin >> num1;
+
+                std::cout << "Ingrese el segundo numero\n";
+                std::cin >> num2;
+
+                resultado = num1 + num2;
+
+                std::cout << "El resultado de la suma es " << resultado << std::endl;
+                break;
+            }
+            case 2:{
+                std::cout << "Ingrese el primer numero por favor\n";
+                std::cin >> num1;
+
+                std::cout << "Ingrese el segundo numero\n";
+                std::cin >> num2;
+
+                resultado = num1 - num2;
+                std::cout << "El resultado de la resta es " << resultado << std::endl;
+                break;
+            }
+            case 3:{
+                std::cout << "Ingrese el primer numero por favor\n";
+                std::cin >> num1;
+
+                std::cout << "Ingrese el segundo numero\n";
+                std::cin >> num2;
+                resultado = num1 * num2;
+                std::cout << "El resultado de la multiplacion es " << resultado << std::endl;
+                break;
+            }
+            case 4: {
+                std::cout << "Ingrese el primer numero por favor\n";
+                std::cin >> num1;
+
+                std::cout << "Ingrese el segundo numero\n";
+                std::cin >> num2;
+                resultado = num1 / num2;
+                std::cout << "El resultado de la division es " << resultado << std::endl;
+                break;
+            }
+            case 5: {
+                std::cout << "dame tu primer numero por favor\n";
+                std::cin >> num1;
+                std::cout << "dame tu segundo numero por favor\n ";
+                std::cin >> num2;
+
+                if (num1 == num2)
+                {
+                    std::cout << "son iguales no hay diferencia\n";
+                }
+                else
+                {
+                    if (num1 > num2)
+                    {
+                        std::cout << num1 << " es mayor a " << num2 << std::endl;
+                    }
+                    else
+                    {
+                        if (num1 < num2)
+                        {
+                            std::cout << num1 << " es menor a " << num2 << std::endl;
+                        }
+                    }
+                }
+                break;
+            }
+            case 6: {
+                int numeroDecimal;
+                std::cout << "Ingrese un numero decimal:\n";
+                std::cin >> numeroDecimal;
+
+                decimalToBinary(numeroDecimal);
+                break;
             }
 
-            std::cout << "¿Desea realizar otra operación? 0.- NO 1.- SÍ:\n";
+            case 7: {
+                int numeroBinario;
+                std::cout << "Ingrese un numero binario:\n";
+                std::cin >> numeroBinario;
+
+                int resultadoDecimal = binaryToDecimal(numeroBinario);
+
+                std::cout << "El numero decimal es:\n" << resultadoDecimal << std::endl;
+
+                break;
+            }
+            case 8: {
+
+                int binario1s, binario2s;
+
+                std::cout << "Ingrese el primer numero binario: ";
+                std::cin >> binario1s;
+
+                std::cout << "Ingrese el segundo numero binario: ";
+                std::cin >> binario2s;
+
+                int resultadoSuma = sumaBinaria(binario1s, binario2s);
+
+                std::cout << "La suma binaria es: " << resultadoSuma << std::endl;
+
+                break;
+            }
+            case 9: {
+                int binario1r, binario2r;
+
+                std::cout << "Ingrese el primer numero binario: ";
+                std::cin >> binario1r;
+
+                std::cout << "Ingrese el segundo numero binario: ";
+                std::cin >> binario2r;
+
+                int resultadoResta = restaBinaria(binario1r, binario2r);
+
+                std::cout << "La resta binaria es: " << resultadoResta << std::endl;
+                break;
+            }
+            case 10: {
+                int binario1m, binario2m;
+
+                std::cout << "Ingrese el primer numero binario: ";
+                std::cin >> binario1m;
+
+                std::cout << "Ingrese el segundo numero binario: ";
+                std::cin >> binario2m;
+
+                int resultadoMultiplicacion = multiplicacionBinaria(binario1m, binario2m);
+
+                std::cout << "La multiplicación binaria es: " << resultadoMultiplicacion << std::endl;
+
+                break;
+            }
+            case 11: {
+                int binario1d, binario2d;
+
+                std::cout << "Ingrese el numerador binario: ";
+                std::cin >> binario1d;
+
+                std::cout << "Ingrese el divisor binario: ";
+                std::cin >> binario2d;
+
+                divisionBinaria(binario1d, binario2d);
+                break;
+            }
+            }
+
+            std::cout << "Deseas realizar otra operacion? 0.- NO 1.- SI:\n";
             std::cin >> repetir;
             system("cls");
         }
@@ -202,7 +332,7 @@ int main()
     }
 
     return 0;
+
+
+
 }
-
-
-
