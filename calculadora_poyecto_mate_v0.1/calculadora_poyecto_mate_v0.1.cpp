@@ -26,6 +26,7 @@ void decimalToBinary(int decimal) {
         std::cout << binary[j];
     }
 }
+
 //binario a decimal
 int binaryToDecimal(int binary) {
     int decimal = 0, base = 1, remainder;
@@ -39,6 +40,7 @@ int binaryToDecimal(int binary) {
 
     return decimal;
 }
+
 // Función para sumar dos números binarios
 int sumaBinaria(int binario1s, int binario2s) {
     int carry = 0, resultado = 0, base = 1;
@@ -59,6 +61,7 @@ int sumaBinaria(int binario1s, int binario2s) {
 
     return resultado;
 }
+
 // Función para restar dos números binarios
 int restaBinaria(int binario1r, int binario2r) {
     int borrow = 0, resultado = 0, base = 1;
@@ -106,6 +109,7 @@ int multiplicacionBinaria(int binario1m, int binario2m) {
 
     return resultado;
 }
+
 // Función para dividir dos números binarios
 void divisionBinaria(int binario1d, int binario2d) {
     if (binario2d == 0) {
@@ -133,6 +137,7 @@ void divisionBinaria(int binario1d, int binario2d) {
     std::cout << "El cociente binario es: " << cociente << std::endl;
     std::cout << "El residuo binario es: " << binario1d << std::endl;
 }
+
 int main()
 {
     std::setlocale(LC_ALL, "es_MX.UTF-8");
