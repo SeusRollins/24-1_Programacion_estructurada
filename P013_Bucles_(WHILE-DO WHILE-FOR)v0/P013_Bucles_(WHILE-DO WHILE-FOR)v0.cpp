@@ -20,10 +20,10 @@ int main()
         std::string usuario;
         std::string contrasena;
 
-        std::cout << "Bienvenido a los juegos del hambre\n" <<  "Inicia sesión por favor\n";
+        std::cout << "Bienvenido a los juegos del hambre\n";
+        std::cout<< "Inicia sesion por favor\n";
         std::cout << "¿Cuál es tu nombre de usuario?\n";
         std::getline(std::cin, usuario);
-
         std::cout << "¿Cuál es tu contraseña?\n ";
         std::getline(std::cin, contrasena);
 

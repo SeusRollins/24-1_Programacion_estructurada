@@ -1,0 +1,3 @@
+﻿  P018_Punteros.cpp
+C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P018_Punteros\P018_Punteros.cpp(27,33): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  P018_Punteros.vcxproj -> C:\Users\gil_h\OneDrive\Documents\GitHub\24-1_Programacion_estructurada\P018_Punteros\x64\Debug\P018_Punteros.exe
