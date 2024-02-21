@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB3BEB4-730D-4AAD-9983-84A47E5B3AB3}|P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.vcxproj|C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6BB3BEB4-730D-4AAD-9983-84A47E5B3AB3}|P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.vcxproj|solutionrelative:P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp",
+              "DocumentMoniker": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp",
+              "RelativeDocumentMoniker": "P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp",
+              "ToolTip": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0\\P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp",
+              "RelativeToolTip": "P007 Decisiones (IF-ELSE-SWITCH CASE)_v0.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-09-25T14:11:47.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{269B6C06-8CD6-4F3E-97EC-79DF93222DC7}|P008_Bucles_(WHILE-DO WHILE-FOR)_v0.vcxproj|C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{269B6C06-8CD6-4F3E-97EC-79DF93222DC7}|P008_Bucles_(WHILE-DO WHILE-FOR)_v0.vcxproj|solutionrelative:P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp",
+              "DocumentMoniker": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp",
+              "RelativeDocumentMoniker": "P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp",
+              "ToolTip": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0\\P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp",
+              "RelativeToolTip": "P008_Bucles_(WHILE-DO WHILE-FOR)_v0.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-09-27T13:53:37.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
