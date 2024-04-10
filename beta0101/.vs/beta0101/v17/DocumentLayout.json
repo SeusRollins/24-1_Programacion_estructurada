@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\beta0101\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA588BE-2AF8-4C30-A747-459743D7CD10}|beta0101.vcxproj|C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\beta0101\\beta0101.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4BA588BE-2AF8-4C30-A747-459743D7CD10}|beta0101.vcxproj|solutionrelative:beta0101.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "beta0101.cpp",
+              "DocumentMoniker": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\beta0101\\beta0101.cpp",
+              "RelativeDocumentMoniker": "beta0101.cpp",
+              "ToolTip": "C:\\Users\\gil_h\\OneDrive\\Documents\\GitHub\\24-1_Programacion_estructurada\\beta0101\\beta0101.cpp*",
+              "RelativeToolTip": "beta0101.cpp*",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-10T04:38:50.027Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
